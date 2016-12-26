@@ -1,0 +1,59 @@
+.x{
+    &-columns{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-column{
+        box-sizing: border-box;
+        padding: 0px 10px;
+        position: relative;
+        &:first-child{
+            padding-left: 0px;
+        }
+        &:last-child{
+            padding-right: 0px;
+        }
+    }
+    &-1{
+        width: 8.33%;
+        &-o{
+            margin-left: 8.33%;
+        }
+    }
+    &-2{
+        width: 16.66%;
+    }
+    &-3{
+        width: 25%;
+    }
+    &-4{
+        width: 33.33%;
+    }
+    &-5{
+        width: 41.66%;
+    }
+    &-6{
+        width: 50%;
+    }
+    &-7{
+        width: 58.33%;
+    }
+    &-8{
+        width: 66.66%;
+    }
+    &-9{
+        width: 75%;
+    }
+    &-10{
+        width: 83.33%;
+    }
+    &-11{
+        width: 91.66%;
+    }
+    &-12{
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #2b3643;
+    padding: 0px 20px;
+    z-index: 100;
+    &-user{
+        display: inline-block;
+        vertical-align: middle;
+        height: 50px;
+        padding: 10px;
+        cursor: pointer;
+        &:hover{
+            background: #3f4f62;
+        }
+        &-photo{
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 100%;
+            overflow: hidden;
+            width: 29px;
+            height: 29px;
+            margin-right: 5px;
+        }
+        &-login{
+            display: inline-block;
+            vertical-align: middle;
+            color: #c6cfda;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+    }
+
+}

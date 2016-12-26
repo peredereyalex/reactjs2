@@ -1,0 +1,37 @@
+.x-notification{
+    font-size: 14px;
+    a{
+        margin-right: 5px;
+    }
+    a+a{
+        margin-left: 5px;
+    }
+    &__user{
+        color: #000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__project{
+        color: #000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__task{
+        color: #0083a9;
+        font-size: 14px;
+        text-decoration: none;
+        border-bottom: 1px #ccc solid;
+        font-weight: 400;
+    }
+
+}

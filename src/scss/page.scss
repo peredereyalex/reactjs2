@@ -1,0 +1,60 @@
+.page {
+    position: relative;
+    &-bar {
+        position: relative;
+        padding: 0 20px;
+        border-bottom: 1px solid #e7ecf1;
+        background-color: #fff;
+    }
+    &-columns{
+        width: 100%;
+        display: flex;
+        &__item{
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0px 15px;
+        }
+
+    }
+
+    &-breadcrumb {
+        display: inline-block;
+        padding: 10px 0;
+
+        a {
+            font-size: 16px;
+            position: relative;
+            display: inline-block;
+            margin-right: 22px;
+            text-decoration: none;
+            color: #888;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::after {
+                position: absolute;
+                top: -6px;
+                font-size: 26px;
+                right: -17px;
+                display: inline-block;
+                content: "\2022";
+                border-radius: 50%;
+                color: #aaa;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        padding: 20px;
+        min-height: calc(100vh - 50px);
+    }
+
+}

@@ -1,0 +1,14 @@
+.x-page{
+    position: relative;
+    min-height: calc(100vh - 50px);
+    &__preview{
+        position: relative;
+        padding: 20px;
+        background: #fff;
+    }
+    &__content {
+        position: relative;
+        padding: 20px;
+        background: #e7ecf1;
+    }
+}

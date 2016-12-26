@@ -1,0 +1,43 @@
+.table{
+    display: table;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #e7ecf1;
+    margin: 10px 0!important;
+    cursor: default;
+    min-width: 100%;
+
+    &-container{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    &__row{
+        display: table-row;
+        &:hover{
+            background: #f3f4f6!important;
+        }
+    }
+    &__head{
+        display: table-row;
+    }
+    &__body{
+        display: table-row-group;
+    }
+    &__cell{
+        display: table-cell;
+        padding: 8px;
+        line-height: 1.42857;
+        vertical-align: top;
+        border-top: 1px solid #e7ecf1;
+    }
+
+    &__cell-empty{
+        border: none;
+        opacity: 0;
+    }
+
+    &__cell-nowrap{
+        white-space: nowrap;
+    }
+}

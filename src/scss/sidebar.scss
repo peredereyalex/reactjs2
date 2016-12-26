@@ -1,0 +1,101 @@
+.sidebar {
+    position: fixed;
+    width: 235px;
+    background: #364150;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    padding: 20px 0 0;
+    &__menu{
+
+    }
+    &__arrow{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: top;
+    }
+    &__menu.active &__arrow{
+        transform: rotate(-90deg) translateY(-50%);
+    }
+    &__menu.active>&__link{
+        background: #2C3542;
+    }
+    &__menu.active &__list{
+        display: block;
+    }
+    &__list{
+        display: none;
+    }
+    &__list &__link{
+        padding-left: 35px;
+    }
+    &__link{
+        cursor: pointer;
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        border-top: 1px solid #3d4957;
+        color: #b4bcc8;
+        position: relative;
+        &:hover {
+            background: #2C3542;
+        }
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &.active {
+            color: #fff;
+            background: #36c6d3;
+        }
+    }
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-downloads{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        &__link{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            padding: 15px 20px;
+            text-decoration: none;
+            &:hover {
+                background: #3f4f62;
+            }
+            i{
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: url(../i/sidebar/icon.png) no-repeat center;
+                background-size: cover;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            span{
+                display: block;
+                font-size: 18px;
+                color: #b4bcc8;
+                font-weight: 300;
+            }
+        }
+    }
+}

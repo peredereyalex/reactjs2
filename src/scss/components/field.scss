@@ -1,0 +1,60 @@
+.field {
+    margin-bottom: 15px;
+    &__label{
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+        color: #333;
+        white-space: nowrap;
+    }
+    &__color{
+        cursor: pointer;
+        position: relative;
+        .field__value{
+            cursor: pointer;
+            padding-left: 35px;
+        }
+        .github-picker{
+            display: none!important;
+            position: absolute!important;
+            left: 0;
+            top: 36px;
+            width: 212px !important;
+        }
+        &.active{
+            .github-picker{
+                display: flex!important;
+                z-index: 100;
+            }
+        }
+    }
+    &__coloricon{
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 4px;
+        width: 25px;
+        height: 25px;
+        transition: 0.4s;
+    }
+    &__value{
+        font-size: 14px;
+        width: 100%;
+        min-height: 33px;
+        padding: 6px 12px;
+        transition: 0.3s;
+        color: #4d6b8a;
+        border: 1px solid #c2cad8;
+        background-color: #fff;
+
+        &.warning{
+            border-color: #e43a45!important;
+        }
+
+        &:focus {
+            border-color: #93a1bb;
+        }
+    }
+
+}

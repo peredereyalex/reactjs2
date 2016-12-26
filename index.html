@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Dreel.ru</title>
+</head>
+<body>
+    <style>
+        .x-loader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: .7s;
+            -webkit-transition: .7s;
+            opacity: 1;
+            background-color: #f4f5f5;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(/assets/i/auth/loader.png);
+            z-index: 10;
+        }
+        .x-loader__end{
+            opacity: 0;
+        }
+    </style>
+    <div class="x-loader"><i></i></div>
+    <div id="app"></div>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&subset=cyrillic" rel="stylesheet">
+    <script src="/assets/js/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="/assets/js/jquery.cookie.js" charset="utf-8"></script>
+    <script src="/assets/js/microevent.js" charset="utf-8"></script>
+    <script src="/assets/js/swiper.jquery.min.js" charset="utf-8"></script>
+
+    <!-- <script src="/assets/js/bundle_manager.js"></script> -->
+
+    <script src="/assets/js/bundle_user.js"></script>
+</body>
+</html>

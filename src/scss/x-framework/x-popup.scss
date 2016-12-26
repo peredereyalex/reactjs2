@@ -1,0 +1,62 @@
+.x-popup{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &_active{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__overlay{
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0, 0.5);
+    }
+    &__body{
+        z-index: 20;
+        background: #fff;
+        padding: 20px 30px;
+        position: relative;
+        width: 500px;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    &__item{
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &__item + &__item{
+        margin-left: 15px;
+    }
+    &__close{
+        width: 13px;
+        height: 13px;
+        background-image: url(../i/popup/icon_close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+}
